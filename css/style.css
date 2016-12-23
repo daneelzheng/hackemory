@@ -1,0 +1,151 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'tPXtra';
+    src: local('../TYPOGRAPH PRO Extra Bold.ttf'), url('../TYPOGRAPH PRO Extra Bold.ttf')
+}
+
+@font-face {
+    font-family: 'HelveticaNeue-Thin';
+    src: local('HelveticaNeue-Thin.otf'), url('HelveticaNeue-Thin.otf') format('opentype');
+}
+/* General */
+*{
+    box-sizing: border-box;
+}
+#hero {
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+.mlh-logo{
+    margin-left: 400px;
+    width: 5%;
+    float: left; 
+}
+
+.layer {
+  background-position: bottom center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.layer-01 {
+    background-position: top center;
+    background-image: url(../img/cliff-bg.png);
+}
+.layer-02 {
+   background-image: url(../img/cliff-02.png);
+    background-position: 0px 65%;
+}
+.layer-03 {
+    background-position: 0px 55%;;
+   background-image: url(../img/cliff-03.png);
+}
+.layer-04 {
+   background-image: url(../img/cliff-01.png);
+    background-position: bottom;
+}
+.layer-logo{
+    background-image: url(../img/logo.png);
+    background-position: center 35%;
+    background-size: 20%;
+}
+.layer-wolf {
+    background-position: right 60%;
+    background-size: 15%;
+   background-image: url(../img/cliff-dog.png);
+}
+.layer-fog{
+     background-image: url(../img/fog.png);
+    background-size: cover;
+}
+
+#hero-mobile {
+  display: none;
+  background: url(“") no-repeat center bottom / cover;
+  height: 320px;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+    background-color: black;
+    color: white;
+}
+.container h2{
+    font-family: 'HelveticaNeue-Thin';
+    font-size: 40px;
+    text-align: center;
+    padding-top: 800px;
+    background-color: black;
+}
+#hero .container{
+    max-width: 1100px;;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    color: black;
+}
+.logo-text{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 700;
+    font-size: 150%;
+    font-family: 'HelveticaNeue-Thin';
+    float: left;
+    vertical-align: center;
+}
+.logo-text:hover{
+    color:dimgray;
+    transition: color 0.15s;
+}
+
+.navbar{
+    font-family: 'HelveticaNeue-Thin';
+    float: right;
+}
+
+.nav li{
+    display: inline-block
+}
+
+.nav li a{
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 20px;
+    border-bottom: 4px solid black transparent;
+    padding-bottom: 3px;
+    color: black;
+}
+.nav li a:hover{
+    border-bottom: 4px solid black;
+    transition: border-bottom 0.1s, color 0.1s;
+}
+
+
+.main-content .container{
+    font-family: 'HelveticaNeue-Thin';
+    text-align: center;
+}
+
+
+/* Media Query */
+
+@media only screen and (max-width: 768px) {
+  #hero {
+    display: none;
+  }
+
+  #hero-mobile {
+    display: block;
+  }
+}
